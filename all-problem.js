@@ -296,4 +296,50 @@
 // সংখ্যা পাওয়া গে ছে । সে গুলা রি টার্ন করে দি বে ।
 
 
-// log a and i wount to be 
+// 1= Print all even numbers from 1 - 20
+
+// write down the function structure
+// think if any parameter is necessary
+// how can i get all the values
+// how can i get the even values only
+
+function allevenNumber() {
+    for (let i = 1; i <= 20; i++) {
+        if (i % 2 === 0) {
+            // console.log(i);
+        }
+    }
+}
+allevenNumber();
+
+//2= Count numbers divisible by 3 from 1 - 20;
+
+function numberCount() {
+    for (let i = 1; i < 20; i++) {
+        if (i % 3 === 0) {
+            // console.log(i);
+        }
+    }
+}
+
+numberCount()
+
+
+function numberCount2() {
+    let rejult = 0;
+    for (let i = 1; i < 20; i++) {
+        if (i % 3 === 0) {
+            rejult++;
+        }
+
+    }
+    return rejult;
+}
+
+console.log(numberCount2());
+
+
+
+
+
+
