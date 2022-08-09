@@ -324,7 +324,7 @@ function numberCount() {
 
 numberCount()
 
-
+// Count
 function numberCount2() {
     let rejult = 0;
     for (let i = 1; i < 20; i++) {
@@ -336,7 +336,188 @@ function numberCount2() {
     return rejult;
 }
 
-console.log(numberCount2());
+// console.log(numberCount2());
+
+//3= Count the number of vowels in a string
+
+
+let string = "Count the number of vowels in a string";
+
+function countVowels(string) {
+    let vowsls = "aeiou";
+    let count = 0;
+    for (let i = 0; i < string.length; i++) {
+        let leters = string[i];
+        for (let j = 0; j < vowsls.length; j++) {
+            if (leters === vowsls[j]) {
+                count++
+            }
+        }
+    }
+    return count;
+}
+
+// console.log(countVowels(string));
+
+
+
+let string2 = "Count the number of vowels in a string";
+
+function countVowels(string) {
+    let vowsls = "aeiou";
+    let count = 0;
+    for (let i = 0; i < string.length; i++) {
+        let leters = string[i];
+        if (leters == "a" || leters == "e" || leters == "i" || leters == "o" || leters == "u") {
+            count++;
+        }
+    }
+    return count;
+}
+
+// console.log(countVowels(string2));
+
+
+//4= Calculate the average of all the numbers that is divisible by 3 from 1 - n;
+
+
+function averageDivisibleBy3(n) {
+    let count = 0;
+    let sum = 0;
+    for (let i = 1; i < n; i++) {
+        if (i % 3 == 0) {
+            count++
+            sum = sum + i;
+        }
+    }
+    return sum / count;
+}
+
+// console.log(averageDivisibleBy3(10));
+
+
+//5= Mular dam
+// For first 2 kg - 30 tk per kg
+// For more than 2 kg - 25 tk per kg
+// write a function to calculate total price based on given quantity. + handle errors
+
+
+function MolarDam(moula) {
+    let total;
+    if (moula <= 2) {
+        total = moula * 30;
+    }
+    else if (moula >= 2) {
+        let fast2 = 2 * 30;
+        let remainder = moula - 2;
+        let remaindertotal = remainder * 25;
+        total = fast2 + remaindertotal;
+    }
+    return total;
+}
+
+let nula = MolarDam(2.5);
+// console.log(nula);
+
+
+
+//6= Calculate Electricity bill
+// For first 100 unit - 5 tk per unit
+// For more than 100 unit 6 tk for every unit more than 100
+// For more than 200 unit 7 tk for every unit more than 200
+
+function electricityBill(unit) {
+    let bill;
+    if (unit <= 100) {
+        bill = unit * 5;
+    }
+    else if (unit <= 200) {
+        let fast100 = 100 * 5;
+        let remainder = unit - 100;
+        let remaindingCost = remainder * 6;
+        bill = fast100 + remaindingCost;
+    }
+    else if (unit > 200) {
+        let fast100 = 100 * 5;
+        let second100 = 100 * 6;
+        const remaining = unit - 200;
+        const remainingBill = remaining * 7;
+        bill = fast100 + second100 + remainingBill;
+
+    }
+    return bill;
+}
+
+
+
+// console.log(electricityBill(250));
+
+
+
+// function electricityBill(unit) {
+//     let bill;
+//     if (unit <= 100) {
+//         bill = unit * 5;
+//     } else if (unit <= 200) {
+//         // 130
+//         // 100 => 500
+//         // 30 * 6 = 180
+//         const first100 = 100 * 5;
+//         const remaining = unit - 100;
+//         const remainingCost = remaining * 6;
+//         bill = first100 + remainingCost;
+//     } else if (unit > 200) {
+//         //unit 230
+//         const first100 = 100 * 5;
+
+//         const second100 = 100 * 6;
+
+//         const remaining = unit - 200;
+
+//         const remainingBill = remaining * 7;
+
+//         bill = first100 + second100 + remainingBill;
+//     }
+
+//     return bill;
+// }
+
+
+// const totalBill = electricityBill(150)
+// console.log(totalBill)
+
+
+
+
+
+
+// Find if anybody got A+ from your friends
+// marks = [78, 82, 69];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
