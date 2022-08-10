@@ -491,10 +491,149 @@ function electricityBill(unit) {
 
 
 
-// Find if anybody got A+ from your friends
+//7/ Find if anybody got A+ from your friends
 // marks = [78, 82, 69];
 
 
+function gpameter(array) {
+    for (let i = 0; i < array.length; i++) {
+        let index = array[i];
+        if (index >= 80 && index <= 100) {
+            let gpa = "gpa = A+";
+
+            return true;
+
+        }
+    }
+    return false;
+}
+
+// console.log(gpameter([78, 82, 69]));
+
+
+
+// 8 / Find the largest element of an array
+
+let array = [2, 5, 8, 96, 12, 400, 5, 1];
+function largestElement(arry) {
+    let largest = arry[0];
+    let segendlargest = arry[0];
+    for (let i = 0; i < arry.length; i++) {
+        let index = arry[i];
+        if (index > largest) {
+            largest = index;
+        }
+    }
+    return largest;
+}
+
+// console.log(largestElement(array));
+
+
+
+
+// function largestElement(array) {
+//     let largest = array[0];
+//     for (const element of array) {
+//         if (element > largest) {
+//             largest = element;
+//         }
+//     }
+//     return largest;
+// }
+
+// let array = [3, 5, 7, 1, 9];
+
+// console.log(largestElement(array))
+
+
+// Find the second largest element of an array
+// function secondLargestElement(array) {
+//   let largest = array[0];
+//   let secondLargest = array[0];
+
+//   for (let i = 0; i < array.length; i++) {
+//     let element = array[i];
+//     if (element > largest) {
+//       secondLargest = largest;
+//       largest = element;
+//     } else if (element > secondLargest && element != largest) {
+//       secondLargest = element;
+//     }
+//   }
+
+//   return secondLargest;
+// }
+
+// let array = [45, 41, 56, 35, 64, 60];
+
+// // let result = secondLargestElement(array);
+// // console.log(result[0], result[1])
+// console.log(secondLargestElement(array));
+
+
+
+
+
+// 9  Remove duplicate from array
+
+// function removeDuplicate(arr) {
+//     let unique = [];
+
+//     for (let i = 0; i < arr.length; i++) {
+//         if (unique.includes(arr[i]) == false) {
+//             unique.push(arr[i]);
+//         }
+//     }
+//     return unique;
+
+// }
+
+// console.log(removeDuplicate([1, 2, 3, 2, 4]))
+
+
+
+
+
+//10 Check if a number is Prime
+
+
+
+function prime(number) {
+    for (let i = 1; i < number; i++) {
+        if (number % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+console.log(prime(12));
+
+// 1 n 11
+// 2 -> n-1
+
+// function isPrime(number) {
+
+//     for (let i = 2; i < number; i++) {
+//         if (number % i == 0) {
+//             return false;
+//         }
+//     }
+
+//     return true;
+
+// }
+
+// function primeRange(arr){
+//   let primeArray = [];
+//   for(let i = 0; i < arr.length; i++){
+//     const prime = isPrime(arr[i]);
+//     primeArray.push(prime)
+//   }
+//   return primeArray
+// }
+
+// console.log(isPrime(7))
 
 
 
@@ -502,25 +641,9 @@ function electricityBill(unit) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Write a function that will take a number and will check the number is positive or negative.
+// Write a JavaScript function that accepts a number as a parameter and check the number is prime or not.
+// Write a function named findArea() that will take base and height of a triangle and will return the area of triangle.
+// Write a function named findArea() that will take height and width of a rectangle and will return the area of rectangle.
+// Write a function which will take an integer and will return the square of a number.
+// Write a function that will taka an array and calculate the sum of odd numbers greater than 10 and less than 50.
